@@ -1,0 +1,32 @@
+server:
+  port: 8081
+logging:
+  level:
+    org.springframework: DEBUG
+
+security:
+  oauth2:
+    resource:
+      jwt:
+        keyValue: |
+          -----BEGIN CERTIFICATE-----
+          MIIDezCCAmOgAwIBAgIIM9vtOT6DXwYwDQYJKoZIhvcNAQELBQAwbDELMAkGA1UE
+          BhMCS1IxDzANBgNVBAgTBnNvbmdwYTEOMAwGA1UEBxMFc2VvdWwxETAPBgNVBAoT
+          CGRrc3NoZGRsMREwDwYDVQQLEwhka3NzaGRkbDEWMBQGA1UEAxMNY2hhbmdqb24g
+          aHl1bjAeFw0yMjAyMjcwODU2MDhaFw0zMjAyMjUwODU2MDhaMGwxCzAJBgNVBAYT
+          AktSMQ8wDQYDVQQIEwZzb25ncGExDjAMBgNVBAcTBXNlb3VsMREwDwYDVQQKEwhk
+          a3NzaGRkbDERMA8GA1UECxMIZGtzc2hkZGwxFjAUBgNVBAMTDWNoYW5nam9uIGh5
+          dW4wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDNNwedcT0qXO5g8BaS
+          kIEzsmjY9czd1b4PORCIf6OF3G4/FQ13O8u9HYB9W93mrbtPCwU49Z8UzfqoV+wp
+          oPhITn1FwoKnFpAlcACI1tmP7hO7FyaNVq+Y5t+veppVApfjg9f8HlWTlH7f/oSO
+          O6K6vJ9W89325/leg7uIenQE4takSNu8JMQxYMU/9vZIUKwPqT5m4Ab4+Rm01AaI
+          Cu/58PAZQfitI+yyA0K3iETElKrF1O/l5lYp3sgxJ8l09RbYIR3roffuX7wSvHHn
+          rx4yyjCggIUEsK7iKiEf/HGFO721y1XVMBCPFX0kjtrJQJ6KTRxI5QHnI3YwXKYL
+          SlhZAgMBAAGjITAfMB0GA1UdDgQWBBTO9CjfNH3Nnn/rZ893Q4pH/L46bjANBgkq
+          hkiG9w0BAQsFAAOCAQEAdwnWsZkab3lOEu2aSmo/y2/vKlgzOSGxAAEANRxOlzx+
+          QXMo67j1nFTj7g6uUTE7NubFXvfPULgafZi0O/LEVuGjHu6vL1NqWUS1EZGKYHw/
+          jbYvfRdg2dK9t5J2RhW5MgZhiFyfccRrQ2hL+MphcDVu/b5A7eXNvOXGAlFBaibo
+          GyQhw998iV4NZqNKSri86xJc0nFdFVIddlArPjV4ogoPgzznL9UBKeJxCkKL/Gif
+          8vGvA1Ej8Qo+WfDXejsH/8a67XYep7+t3unmGgQ2ywEt0vlg8QavF76N/mWdnbrk
+          xy14WAyYu3miGZjiT2/yKeIYtjw9lL5GZAwM61D6lA==
+          -----END CERTIFICATE-----
