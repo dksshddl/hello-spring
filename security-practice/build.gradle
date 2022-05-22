@@ -26,17 +26,22 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.1'
-	implementation 'org.springframework.boot:spring-boot-devtools'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-	implementation 'org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.security:spring-security-jwt'
+
+	// 버전을 명시적으로 지정해야 한다(?)
+	implementation 'org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.5.2'
+
 	compileOnly 'org.projectlombok:lombok'
-	runtimeOnly 'com.h2database:h2'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'mysql:mysql-connector-java'
 	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'io.projectreactor:reactor-test'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
 }
 
 dependencyManagement {

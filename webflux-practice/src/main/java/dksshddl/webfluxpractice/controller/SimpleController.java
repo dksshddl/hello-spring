@@ -19,6 +19,11 @@ public class SimpleController {
 
     private final SimpleService simpleService;
 
+    @GetMapping("/str")
+    public Mono<List<String>> getSameple() {
+        return Mono.just(List.of("A", "B", "C"));
+    }
+
     @GetMapping("/get")
     public Mono<List<String>> getTest() {
         return simpleService.getData();

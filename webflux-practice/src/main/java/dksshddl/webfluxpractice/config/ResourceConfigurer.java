@@ -7,8 +7,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 
-@Configuration
-@EnableGlobalMethodSecurity(prePostEnabled = true) // Allow method annotations like @PreAuthorize
+//@Configuration
+//@EnableGlobalMethodSecurity(prePostEnabled = true) // Allow method annotations like @PreAuthorize
 public class ResourceConfigurer extends WebSecurityConfigurerAdapter {
 
     @Override

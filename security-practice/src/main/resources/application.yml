@@ -2,6 +2,12 @@ server:
   port: 8083
   servlet:
     context-path: /authserver
+  logging:
+    level:
+      org:
+        springframework:
+          web: DEBUG
+          security: DEBUG
 
 # Our certificate settings for enabling JWT tokens
 jwt:
@@ -27,3 +33,5 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     properties.hibernate.hbm2ddl.auto: update
     showSql: true
+
+
